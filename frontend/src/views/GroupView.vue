@@ -1,12 +1,12 @@
 <template>
   <div class="flex max-h-screen p-0 m-0">
-    <div class="flex flex-row max-h-screen justify-content-center flex-grow-1 pt-4">
+    <div class="w-screen" style="position: absolute; top: 0; left: 0; z-index: 9;">
       <div v-if="santaStore.isLoading" class="text-center w-full">
         Loading...
       </div>
 
       <template v-else>
-        <Card style="min-width: 450px;">
+        <Card class="mt-4" style="width: 350px; margin-left: calc(50% - 174px)">
           <template #content>
             <div class="mb-4">
               <h1 class="text-2xl text-center mt-0 font-bold">{{ santaStore.currentGroup?.name }}</h1>
