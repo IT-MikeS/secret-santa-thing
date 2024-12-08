@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        SELECT id as \"id!\", name as \"name!\", creator as \"creator!\", is_generated as \"is_generated!\"\n        FROM groups \n        WHERE id = ?\n        ",
+  "describe": {
+    "columns": [
+      {
+        "name": "id!",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "name!",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "creator!",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "is_generated!",
+        "ordinal": 3,
+        "type_info": "Bool"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "cf8a04e4681f826ffc36c17e677f5806559b819f93ef5788d26b350f3130bc5f"
+}

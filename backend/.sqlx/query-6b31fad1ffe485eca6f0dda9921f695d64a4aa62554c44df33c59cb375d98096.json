@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "\n      SELECT \n          g.id as \"id!\", \n          g.name as \"name!\", \n          g.is_generated as \"is_generated!: bool\", \n          m.is_creator as \"is_creator!: bool\"\n      FROM groups g\n      JOIN members m ON g.id = m.group_id\n      WHERE m.user_id = ?\n      ORDER BY g.id DESC\n      ",
+  "describe": {
+    "columns": [
+      {
+        "name": "id!",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "name!",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "is_generated!: bool",
+        "ordinal": 2,
+        "type_info": "Bool"
+      },
+      {
+        "name": "is_creator!: bool",
+        "ordinal": 3,
+        "type_info": "Bool"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "6b31fad1ffe485eca6f0dda9921f695d64a4aa62554c44df33c59cb375d98096"
+}

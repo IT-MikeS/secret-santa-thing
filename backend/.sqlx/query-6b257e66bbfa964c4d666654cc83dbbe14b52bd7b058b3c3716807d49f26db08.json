@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT is_generated as \"is_generated!: bool\" FROM groups WHERE id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "is_generated!: bool",
+        "ordinal": 0,
+        "type_info": "Bool"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true
+    ]
+  },
+  "hash": "6b257e66bbfa964c4d666654cc83dbbe14b52bd7b058b3c3716807d49f26db08"
+}

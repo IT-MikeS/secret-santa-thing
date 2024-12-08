@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        SELECT \n            group_id as \"group_id!\",\n            user_id as \"user_id!\",\n            name as \"name!\",\n            is_creator as \"is_creator!\"\n        FROM members \n        WHERE group_id = ?\n        ",
+  "describe": {
+    "columns": [
+      {
+        "name": "group_id!",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "user_id!",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "name!",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "is_creator!",
+        "ordinal": 3,
+        "type_info": "Bool"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "01060a82b6686b4ae506c3e0c9297a9e31e4e8e696feba02277106e5cfc55dd1"
+}

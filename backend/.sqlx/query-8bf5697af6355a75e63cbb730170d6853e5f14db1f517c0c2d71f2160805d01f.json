@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT (EXISTS(SELECT 1 FROM members WHERE group_id = ? AND name = ?))",
+  "describe": {
+    "columns": [
+      {
+        "name": "(EXISTS(SELECT 1 FROM members WHERE group_id = ? AND name = ?))",
+        "ordinal": 0,
+        "type_info": "Int"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      null
+    ]
+  },
+  "hash": "8bf5697af6355a75e63cbb730170d6853e5f14db1f517c0c2d71f2160805d01f"
+}

@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        SELECT m.name \n        FROM assignments a\n        JOIN members m ON m.user_id = a.receiver_id\n        WHERE a.group_id = ? AND a.giver_id = ?\n        ",
+  "describe": {
+    "columns": [
+      {
+        "name": "name",
+        "ordinal": 0,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      true
+    ]
+  },
+  "hash": "fca69df1794a593d5402e39a10614b835557af44e425c3e30fc9edb5752e13a3"
+}

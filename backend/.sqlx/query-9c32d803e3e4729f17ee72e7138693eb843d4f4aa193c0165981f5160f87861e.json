@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        INSERT INTO assignments (group_id, giver_id, receiver_id)\n        VALUES (?, ?, ?)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "9c32d803e3e4729f17ee72e7138693eb843d4f4aa193c0165981f5160f87861e"
+}

@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "\n    SELECT \n        user_id as \"user_id!\", \n        name as \"name!\"\n    FROM members \n    WHERE group_id = ?\n    ",
+  "describe": {
+    "columns": [
+      {
+        "name": "user_id!",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "name!",
+        "ordinal": 1,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      true
+    ]
+  },
+  "hash": "1f4684105233f5c193c4fe8ed16a5a8af66da949ef29a26eadb6522e61820832"
+}
